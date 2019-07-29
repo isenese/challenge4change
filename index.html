@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body >
+    <div class="container">
+        <div class="logo">
+          <img src="lib/images/GPlogo.png">
+        </div>
+        <div class="video">
+            <video  width="600" controls autoplay >
+                <source src="lib/video/gpvideo.mp4" type="video/mp4" >
+              Your browser does not support the video tag.
+              </video>
+    
+        </div>
+        <div class="copy_below_video">
+          <p >
+            Copy about why this video is awesome. lorem ipso lorem ipso lorem ipso lorem ipso lorem ipso lorem ipso lorem ipso lorem ipsolorem ipso lorem ipso lorem ipso lorem ipso lorem ipso
+          </p>
+        </div>
+        <div class="actions">
+          <div class="action1">
+            <img class="imgAction1" src="lib/images/action1.png" width="40%" onclick=" toggleAction1(); playSound(); carbonCounter() ">
+            <img class="imgAction1Toggled" src="lib/images/action1Toggled.png" width="40%" style="display:none;" onclick=" toggleAction1(); playDeselect(); carbonCounter()">
+            <script src="actions.js"></script>
+          </div>
+          <div class="action2">
+            <img class="imgAction2" src="lib/images/action2.png" width="40%" onclick=" toggleAction2(); playSound();  carbonCounter() ">
+            <img class="imgAction2Toggled" src="lib/images/action2Toggled.png" width="40%" style="display:none;" onclick=" toggleAction2(); playDeselect(); carbonCounter()">
+    
+          </div>
+          <div class="action3">
+          <img class="imgAction3" src="lib/images/action3.png" width="40%" onclick=" toggleAction3(); playSound(); carbonCounter()">
+          <img class="imgAction3Toggled" src="lib/images/action3Toggled.png" width="40%" style="display:none;" onclick=" toggleAction3(); playDeselect(); carbonCounter() ">
+    
+          </div>
+          <div class="action4">
+              <img class="imgAction4" src="lib/images/action4.png" width="40%" onclick=" toggleAction4(); playSound(); carbonCounter()">
+              <img class="imgAction4Toggled" src="lib/images/action4Toggled.png" width="40%" style="display:none;" onclick=" toggleAction4(); playDeselect(); carbonCounter()">
+    
+          </div>
+        </div>
+        <script src="">
+        </script>
+    
+        <div >
+    
+        </div>
+        <div class="counter-wrapper">
+          <div class="action1Counter">
+              Total Carbon Avoided <script>`${carbonCounter}`</script>
+          </div>
+        </div>       
+       
+        <div class="sign-button">
+         <button class="commit-button">SIGN UP YOUR COMMITMENT</button>
+        </div>
+
+    </div>
+    <script>
+
+
+    </script>
+  </body>
+</html>
