@@ -114,7 +114,7 @@ function carbonCounter () {
   if (actionCounter === 1) {
     action1Topper[0].style.display = 'inline';
     signButton[0].style.display = 'inline';
-    counterWrap[0].style.display = 'grid';
+    counterWrap[0].style.display = 'flex';
     action1Topper[0].innerHTML = `Total Carbon Avoided ${carbonCount}`
     console.log(carbonCount)
     
