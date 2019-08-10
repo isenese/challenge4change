@@ -5,37 +5,88 @@
   </head>
   <body >
     <div class="container">
-      <div class="logo">
-        <img src="lib/images/GPlogo.png">
+      <div class="logo-wrapper">
+        <div class="logo">
+          <img src="lib/images/GPlogo.png" height="30px">
+        </div>
       </div>
       <div class="video">
-        <video  width="600" controls autoplay >
-          <source src="lib/video/gpvideo.mp4" type="video/mp4" >
+        <div class="carbon-count-video">
+          <div class="count-text-wrap">
+            <span class="carbon-count-text">2,000,000</span>
+            <br>
+            <span class="carbon-count-desc">grams of carbon avoided</span>
+          </div>
+        </div>
+        <video  width="100%" autoplay controls >
+          <source src="lib/video/gpvideo.mp4" type="video/mp4" autoplay >
             Your browser does not support the video tag.
-        </video>   
+      </video>
       </div>
-      <div class="copy_below_video">
-        <p >
-          Copy about why this video is awesome. lorem ipso lorem ipso lorem ipso lorem ipso lorem ipso lorem ipso lorem ipso lorem ipsolorem ipso lorem ipso lorem ipso lorem ipso lorem ipso
-        </p>
+      <div class="campaign-logo">
+        <p class="slogan-text">#Challenge4Change</p>
       </div>
+      <div class="subtitle-wrap">
+        <span class="subtitle">THE TIME HAS COME: FIGHT WITH US AGAINST GLOBAL WARMING</span>
+      </div>
+      <div class="parrafos-wrap">
+        <div class="parrafo-1">
+          <p>It's time to rethink your attitudes and change your habits. By joining this challenge, you will be committing yourself to take a few small actions that will produce big changes.
+          Browse the options below and select the ones which you can easily adapt to your day-to-day. </p>
+        </div>
+        <div class="parrafo-2">
+          <p>Besides helping Greenpeace to fight against global warming, you will be eligible to win some amazing gifts from eco-friendly brands that are engaged with this cause*.
+            <br><br>
+          *Valid for participants based in Korea only. </p>
+        </div>
+      </div>
+      <div class="join-challenge-wrap">
+        <span class="join-challenge-text" >
+          JOIN THE 7-DAY CHALLENGE AND GET YOUR REWARD
+        </span>
+      </div>
+
       <div class="actions">
-        <div class="action1">
-          <img class="imgAction1" src="lib/images/action1.png" width="40%" onclick=" toggleAction1(); playSound(); carbonCounter() ">
-          <img class="imgAction1Toggled" src="lib/images/action1Toggled.png" width="40%" style="display:none;" onclick=" toggleAction1(); playDeselect(); carbonCounter()">
+        <div class="action1 action">
+          <div class="checkbox-wrap">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+              </label>
+            </div>
+          <img class="imgAction1" src="lib/images/action1.png"  onclick=" toggleAction1(); playSound(); carbonCounter() ">
+          <img class="imgAction1Toggled" src="lib/images/action1Toggled.png" style="display:none;" onclick=" toggleAction1(); playDeselect(); carbonCounter()">
           <script src="actions.js"></script>
         </div>
-        <div class="action2">
-          <img class="imgAction2" src="lib/images/action2.png" width="40%" onclick=" toggleAction2(); playSound();  carbonCounter() ">
-          <img class="imgAction2Toggled" src="lib/images/action2Toggled.png" width="40%" style="display:none;" onclick=" toggleAction2(); playDeselect(); carbonCounter()">
+        <div class="action2 action">
+          <div class="checkbox-wrap">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+              </label>
+            </div>
+          <img class="imgAction2" src="lib/images/action2.png"  onclick=" toggleAction2(); playSound();  carbonCounter() ">
+          <img class="imgAction2Toggled" src="lib/images/action2Toggled.png"  style="display:none;" onclick=" toggleAction2(); playDeselect(); carbonCounter()">
         </div>
-        <div class="action3">
-          <img class="imgAction3" src="lib/images/action3.png" width="40%" onclick=" toggleAction3(); playSound(); carbonCounter()">
-          <img class="imgAction3Toggled" src="lib/images/action3Toggled.png" width="40%" style="display:none;" onclick=" toggleAction3(); playDeselect(); carbonCounter() ">
+        <div class="action3 action">
+            <div class="checkbox-wrap">
+              <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+            </div>
+          <img class="imgAction3" src="lib/images/action3.png"  onclick=" toggleAction3(); playSound(); carbonCounter()">
+          <img class="imgAction3Toggled" src="lib/images/action3Toggled.png"  style="display:none;" onclick=" toggleAction3(); playDeselect(); carbonCounter() ">
         </div>
-        <div class="action4">
-          <img class="imgAction4" src="lib/images/action4.png" width="40%" onclick=" toggleAction4(); playSound(); carbonCounter()">
-          <img class="imgAction4Toggled" src="lib/images/action4Toggled.png" width="40%" style="display:none;" onclick=" toggleAction4(); playDeselect(); carbonCounter()">
+        <div class="action4 action">
+          <div class="checkbox-wrap">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+          </div>
+          <img class="imgAction4" src="lib/images/action4.png"  onclick=" toggleAction4(); playSound(); carbonCounter()">
+          <img class="imgAction4Toggled" src="lib/images/action4Toggled.png" style="display:none;" onclick=" toggleAction4(); playDeselect(); carbonCounter()">
         </div>
       </div>
       <div class="counter-wrapper">
@@ -47,7 +98,7 @@
         <button class="sign-button" onclick="openForm()">
           SIGN UP YOUR COMMITMENT
         </button>
-      </div>       
+      </div>
       <div class="form-popup" id="myForm">
         <form action="/action_page.php" class="form-container">
           <h1>Login</h1>
