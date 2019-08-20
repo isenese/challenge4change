@@ -2,8 +2,10 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
+    <script src="actions.js"></script>
   </head>
   <body >
+
     <div class="container">
       <div class="logo-wrapper">
         <div class="logo">
@@ -29,8 +31,10 @@
       <div class="subtitle-wrap">
         <span class="subtitle">THE TIME HAS COME: FIGHT WITH US AGAINST GLOBAL WARMING</span>
       </div>
+
       <div class="parrafos-wrap">
         <div class="parrafo-1">
+
           <p>It's time to rethink your attitudes and change your habits. By joining this challenge, you will be committing yourself to take a few small actions that will produce big changes.
           Browse the options below and select the ones which you can easily adapt to your day-to-day. </p>
         </div>
@@ -42,57 +46,178 @@
       </div>
       <div class="join-challenge-wrap">
         <span class="join-challenge-text" >
-          JOIN THE 7-DAY CHALLENGE AND GET YOUR REWARD
+          JOIN THE 7-DAY CHALLENGE
+        </span>
+        <div class="white-bar"></div>
+        <span class="join-challenge-text2">
+          AND GET YOUR REWARD
         </span>
       </div>
 
+      <div class="commitment-bar-wrap">
+        <div class="first-line-counter-wrap">
+          <div class="commitment-bar">
+            <div class="activated-bar">
+            </div>
+          </div>
+          <div class="current-carbon-count">0000
+          </div>
+        </div>
+        <div class="desktop-counter">
+          GRAMS OF CARBON SAVED
+      </div>
+      </div>
       <div class="actions">
         <div class="action1 action">
-          <div class="checkbox-wrap">
-            <label class="switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
+            <label for="img1">
+                <img class="imgAction1" src="lib/images/action1Toggled.jpg"  onclick="  ">
               </label>
-            </div>
-          <img class="imgAction1" src="lib/images/action1.png"  onclick=" toggleAction1(); playSound(); carbonCounter() ">
-          <img class="imgAction1Toggled" src="lib/images/action1Toggled.png" style="display:none;" onclick=" toggleAction1(); playDeselect(); carbonCounter()">
-          <script src="actions.js"></script>
-        </div>
-        <div class="action2 action">
-          <div class="checkbox-wrap">
-            <label class="switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
+              <label for="img1">
+                <img class="imgAction1Toggled" src="lib/images/action1Toggled.jpg" style="display:none;" onclick=" ">
               </label>
+          <div class="action1-title-wrap">
+            <div class="action-span-wrap">
+              <span class="action-title action-1-title">
+              CARBON<br>DIET
+              </span>
             </div>
-          <img class="imgAction2" src="lib/images/action2.png"  onclick=" toggleAction2(); playSound();  carbonCounter() ">
-          <img class="imgAction2Toggled" src="lib/images/action2Toggled.png"  style="display:none;" onclick=" toggleAction2(); playDeselect(); carbonCounter()">
-        </div>
-        <div class="action3 action">
+          </div>
             <div class="checkbox-wrap">
+              <div class="join-and-button-wrap">
+                <div class="join-button">
+                    Join
+                </div>
               <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-            </div>
-          <img class="imgAction3" src="lib/images/action3.png"  onclick=" toggleAction3(); playSound(); carbonCounter()">
-          <img class="imgAction3Toggled" src="lib/images/action3Toggled.png"  style="display:none;" onclick=" toggleAction3(); playDeselect(); carbonCounter() ">
-        </div>
-        <div class="action4 action">
-          <div class="checkbox-wrap">
-            <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" id="img1" name="img1" onclick="checkimg1()">
                 <span class="slider round"></span>
               </label>
+             </div>
+            </div>
+
+            <div class="action-desc action-1-desc">
+              <p class="action-desc-bold">
+                <strong>I will only eat vegetarian food for 1 week</strong>
+              </p>
+              <p>
+                By not eating meat for this week I will be saving 15,280 grams of Carbon
+              </p>
+            </div>
+
+        </div>
+        <div class="action2 action">
+            <label for="img2">
+                <img class="imgAction2" src="lib/images/action2Toggled.jpg"  onclick=" ">
+              </label>
+              <label for="img2">
+                <img class="imgAction2Toggled" src="lib/images/action2Toggled.jpg"  style="display:none;" onclick=" ">
+              </label>
+          <div class="action2-title-wrap">
+            <div class="action-span-wrap">
+              <span class="action-title action-2-title">
+                REDUCE &<br>REUSE
+              </span>
+            </div>
           </div>
-          <img class="imgAction4" src="lib/images/action4.png"  onclick=" toggleAction4(); playSound(); carbonCounter()">
-          <img class="imgAction4Toggled" src="lib/images/action4Toggled.png" style="display:none;" onclick=" toggleAction4(); playDeselect(); carbonCounter()">
+          <div class="checkbox-wrap">
+            <div class="join-and-button-wrap">
+              <div class="join-button">
+                  Join
+              </div>
+            <label class="switch">
+              <input type="checkbox" id="img2" onclick="checkimg2()">
+              <span class="slider round"></span>
+              </label>
+            </div>
+
+            </div>
+
+          <div class="action-desc action-2-desc">
+            <p class="action-desc-bold">
+              <strong>I will carry my tumbler and not buy plastic bottles for 1 week</strong>
+            </p>
+            <p>
+              By not buying 2 plastic bottles per day for 7 days I will be preventing 1,160 grams of Carbon to go into the atmosphere
+            </p>
+          </div>
+        </div>
+        <div class="action3 action">
+            <label for="img3">
+                <img class="imgAction3" src="lib/images/action3Toggled.jpg"  onclick=" ">
+              </label>
+              <label for="img3">
+                <img class="imgAction3Toggled" src="lib/images/action3Toggled.jpg"  style="display:none;" onclick=" ">
+              </label>
+            <div class="action3-title-wrap">
+              <div class="action-span-wrap">
+                <span class="action-title action-3-title">
+                  SAVE<br>ENERGY
+                </span>
+              </div>
+            </div>
+            <div class="checkbox-wrap">
+              <div class="join-and-button-wrap">
+                <div class="join-button">
+                    Join
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="img3" onclick="checkimg3()">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="action-desc action-3-desc">
+              <p class="action-desc-bold">
+                <strong>I will unplug electronics when not in use for 1 week</strong>
+              </p>
+              <p>
+                By unplugging electronics for 1 week I will save 2,106 grams of carbon
+              </p>
+            </div>
+        </div>
+        <div class="action4 action">
+
+          <label for="img4">
+            <img class="imgAction4" src="lib/images/action4Toggled.jpg"  onclick=" ">
+          </label>
+          <label for="img4">
+            <img class="imgAction4Toggled" src="lib/images/action4Toggled.jpg" style="display:none;" onclick=" ">
+          </label>
+          <div class="action4-title-wrap">
+            <div class="action-span-wrap">
+              <span class="action-title action-4-title">
+                NO CAR<br> COMMUTING
+              </span>
+
+            </div>
+          </div>
+            <div class="checkbox-wrap">
+              <div class="join-and-button-wrap">
+                <div class="join-button">
+                    Join
+                </div>
+              <label class="switch">
+                  <input type="checkbox" id="img4" onclick="checkimg4()">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          <div class="action-desc action-4-desc">
+            <p class="action-desc-bold">
+              <strong>I will public transportation or bike for 1 week</strong>
+            </p>
+            <p>
+              By not using combustion engine cars during this week, I will be saving 7,350 grams of Carbon
+            </p>
+          </div>
         </div>
       </div>
       <div class="counter-wrapper">
         <div class="action1Counter">
-          Total Carbon Avoided <script>`${carbonCounter}`</script>
         </div>
+      </div>
+      <div>
+          <button class="get-started" onclick="openForm()">Get Started</button>
       </div>
       <div class="button-div">
         <button class="sign-button" onclick="openForm()">
@@ -114,4 +239,72 @@
       </div>
     </div>
   </body>
+  <footer>
+      <div class="footer_up">
+        <div class="container">
+          <div class="intro_footer">
+            <div class="logo">
+              <img src="img/gp-logo.png" alt="">
+            </div>
+            <div class="description">
+              <p>그린피스는 1971년 태어난 독립적인 국제환경단체로 지구 환경보호와 평화를 위해 비폭력 직접행동의 평화적인 방식으로 캠페인을 진행하고 있습니다.</p>
+            </div>
+          </div>
+          <div class="our_li">
+            <p><strong>우리의 활동</strong></p>
+            <ul>
+              <li><a href="https://www.greenpeace.org/korea/our-commitment/all-projects/" target="_blank">모든 프로젝트 보기</a></li>
+              <li><a href="https://www.greenpeace.org/korea/our-commitment/full-issue-list/" target="_blank">모든 이슈 보기</a></li>
+            </ul>
+          </div>
+          <div class="intro_gp">
+            <p><strong>그린피스 소개</strong></p>
+            <ul>
+              <li><a href="https://www.greenpeace.org/korea/about/overview/" target="_blank">개요</a></li>
+              <li><a href="https://www.greenpeace.org/korea/about/mission/" target="_blank">미션</a></li>
+              <li><a href="https://www.greenpeace.org/korea/about/how-we-act/" target="_blank">행동방식</a></li>
+              <li><a href="https://www.greenpeace.org/korea/about/reports/" target="_blank">보고서</a></li>
+              <li><a href="https://www.greenpeace.org/korea/about/people/" target="_blank">사람들</a></li>
+              <li><a href="https://www.greenpeace.org/korea/about/contact/" target="_blank">연락처</a></li>
+              <li><a href="https://www.greenpeace.org/korea/about/faq/" target="_blank">자주 하는 질문</a></li>
+            </ul>
+          </div>
+          <div class="social_follow">
+            <p><strong>팔로우하기</strong></p>
+            <ul>
+              <li><a href="https://www.facebook.com/greenpeacekorea" target="_blank"><span class="icon-facebook-circled"></span></a></li>
+              <li><a href="https://twitter.com/greenpeacekorea" target="_blank"><span class="icon-twitter-1"></span></a></li>
+              <li><a href="http://www.youtube.com/greenpeacekorea" target="_blank"><span class="icon-youtube-play"></span></a></li>
+              <li><a href="https://www.instagram.com/greenpeacekorea/" target="_blank"><span class="icon-instagram-1"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_down">
+        <div class="container">
+          <div class="separador">
+            <div class="press_media">
+              <a href="https://www.greenpeace.org/korea/press-media/press-releases/" target="_blank">보도자료와 미디어</a>
+            </div>
+            <div class="info_interest">
+              <a href="https://www.greenpeace.org/korea/my-preferences/" target="_blank">관심정보</a>
+            </div>
+            <div class="patrocinador">
+              <a href="https://donate.gpea.or.kr/v2/default.aspx?Server=eJi599nYF9UrBDnFmU4Hzw==&action=info" target="_blank">후원자 로그인</a>
+            </div>
+          </div>
+          <div class="privacy_policy">
+            <a href="https://www.greenpeace.org/korea/privacy-and-cookies/" target="_blank">개인정보 보호정책</a>
+          </div>
+          <div class="autor_derechos">
+            <a href="https://www.greenpeace.org/korea/terms-and-conditions/" target="_blank">저작권</a>
+          </div>
+          <div class="copyright">
+            <p>Copyright Greenpeace 2019 | 재단법인 그린피스 | 대표자: SZE Pang Cheung (쯔이팽청) | 주소: 서울시 용산구 한강대로 257 청룡빌딩 6층 (우편번호: 04322) | 고유번호: 105-82-21567</p>
+          </div>
+        </div>
+      </div>
+
+      </footer>
 </html>
