@@ -173,6 +173,9 @@ function carbonCounter () {
 
 function openForm() {
   document.getElementById("myForm").style.display = "block";
+  let backgroundPopup = document.getElementsByClassName("background-overlay");
+  
+  backgroundPopup[0].style.display = "block";
 }
 
 function closeForm() {
@@ -244,4 +247,19 @@ var image4Activation = false
      carbonCounter();
    }
    image4Activation = !image4Activation
+}
+
+function closePopup () {
+  let closeButton = document.getElementsByClassName('form-popup')
+  closeButton[0].style.display = 'none';
+  let backgroundPopup = document.getElementsByClassName("background-overlay");
+  backgroundPopup[0].style.display = "none";
+
+}
+
+function counterForm () {
+  let popupCounter = document.getElementsByClassName('popup-counter')
+  popupCounter[0].innerHTML = `${carbonCount}`
+  let counterBarForm = document.getElementsByClassName('carbon-bar-popup2')
+  counterBarForm[0].style.width = `${progressBarWidth}%`
 }

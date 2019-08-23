@@ -217,7 +217,7 @@
         </div>
       </div>
       <div>
-          <button class="get-started" onclick="openForm()">Get Started</button>
+          <button class="get-started" onclick="openForm(), counterForm()">Get Started</button>
       </div>
       <div class="button-div">
         <button class="sign-button" onclick="openForm()">
@@ -225,14 +225,89 @@
         </button>
       </div>
       <div class="form-popup" id="myForm">
+      <div class="background-overlay" onclick="closePopup()" ></div>
         <form action="/action_page.php" class="form-container">
-          <h1>Login</h1>
+          <div  class="popup-form-part1">
+              <div class="part1-title-wrap">
+                <div class="popup-part1-title">
+                  <span>
+                      TAKING
+                  </span>
+                  <span>
+                      ACTION
+                  </span>
+                  <span>
+                    IS CARING
+                  </span>
+                </div>
+              </div>
+              <span class="popup-part1-desc" >By commiting yourself to take these actions, you are going to avoid the emission of</span>
+              <div class="carbon-bar-popup">
+                <div class="carbon-bar-popup2">
+                </div>
+              </div>
+              
+              <div class="bot-text-popup-wrap">
+                <div class="number-carbon-wrap">
+                  <div class="popup-counter">
+                    0,000
+                  </div>
+                  <span class="grams-carbon-popup">
+                    grams of carbon
+                  </span>
+                </div>
+                <div class="grams-popup-desc">
+                  Submit the form and start your challenge
+                </div>
+              </div>
+              </div>
+          <div class="popup-form-part2">
+            <div class="close-popup" onclick='closePopup()' >
+              x
+            </div>
+            <input value="* Name" class="popup-input">
+            <input value="* Telephone" class="popup-input">
+            <input value="* Email" class="popup-input">
+            <div class="popup-checkbox-line">
+              <input type="checkbox">
+                <span class="popup-checkbox select-all">
+                  Select all items.
+                </span>
+                <a>
+                  View privacy policy.
+                </a>
+            </div>
+            <div class="popup-checkbox-line">
+              <input type="checkbox" class="popup-checkbox">
+                <span>
+                  Receive news about the Greenpeace campaign.
+                </span>
+            </div>
+            <div class="popup-checkbox-line">
+              <input type="checkbox" class="popup-checkbox">
+                <span>
+                  I agree to provide personal information.
+                </span>
+            </div>
+            <div class="popup-checkbox-line">
+              <input type="checkbox" class="popup-checkbox" >
+                <span>
+                  I agree ro provide third-party information.
+                </span>
+            </div>
+            <div class="fb-button-popup">
+            </div>
+            <div class="send-button-wrap">
+              <button type="submit" class="send-btn">Send</button>
+            </div>
+          </div>
+          <!-- <h1>Login</h1>
             <label for="email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" required>
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-            <button type="submit" class="btn">Login</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            <input type="password" placeholder="Enter Password" name="psw" required> -->
+            <!-- <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
           </form>
       </div>
       <div class="footer">
